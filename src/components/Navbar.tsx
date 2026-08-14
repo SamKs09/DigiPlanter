@@ -17,8 +17,11 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="flex items-center">
-          <Button className="hidden md:inline-flex bg-primary hover:bg-primary-600 text-white">
-            Download App
+          <Button
+            asChild
+            className="w-full bg-primary hover:bg-primary-600 text-white"
+          >
+            <a href="#download">Download App</a>
           </Button>
           <Button
             variant="ghost"
@@ -56,7 +59,6 @@ const Logo: React.FC = () => (
     <span className="font-bold text-xl">DigiPlanter</span>
   </a>
 );
-
 const NavLinks: React.FC = () => {
   const links = [
     { name: "Home", href: "/" },
@@ -87,7 +89,8 @@ const MobileNavLinks: React.FC<{
     { name: "Home", href: "/" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" }, // Contact added
+    { name: "Contact", href: "#contact" },
+    // Contact added
   ];
 
   return (

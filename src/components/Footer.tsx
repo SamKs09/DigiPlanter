@@ -129,6 +129,7 @@ const Footer: React.FC = () => {
 
       <div className="border-t border-white/10 py-6">
         <div className="container mx-auto text-center">
+          <p className="text-sm text-white/20">Developed by DIGISUBS</p>
           <p className="text-sm text-white/50">
             © 2025 DigiPlanter. All rights reserved.
           </p>
